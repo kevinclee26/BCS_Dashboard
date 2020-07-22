@@ -1,0 +1,4 @@
+var login={
+	'email': '', 
+	'password': ''
+};
