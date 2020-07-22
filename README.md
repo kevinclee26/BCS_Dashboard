@@ -1,3 +1,3 @@
 BCS_Dashboard: 
 
-![Demo](https://github.com/kevinclee26/BCS_Dashboard/tree/master/image/demo.PNG)
+![Demo](https://raw.githubusercontent.com/kevinclee26/BCS_Dashboard/master/image/demo.PNG)
