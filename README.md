@@ -1,1 +1,2 @@
-# BCS_Dashboard
+BCS_Dashboard
+<https://github.com/kevinclee26/BCS_Dashboard/tree/master/image/demo.PNG>
