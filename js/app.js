@@ -186,6 +186,16 @@ var base_url='https://bootcampspot.com/api/instructor/v1/';
 	// 		};
 	// 	}
 	// });
+	function downloadObjectAsJson(exportObj, exportName){
+    	var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+	    var downloadAnchorNode = document.createElement('a');
+	    downloadAnchorNode.setAttribute("href",     dataStr);
+	    downloadAnchorNode.setAttribute("download", exportName + ".json");
+	    document.body.appendChild(downloadAnchorNode); // required for firefox
+	    downloadAnchorNode.click();
+	    downloadAnchorNode.remove();
+  	}
+  	downloadObjectAsJson(feedback_data, 'test')
 	console.log(feedback_data);
 }();
 function init() {
