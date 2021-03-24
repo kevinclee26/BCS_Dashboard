@@ -5,58 +5,65 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BCS API</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel='stylesheet' href='static/css/style.css'>
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      <ul class="navbar-nav" id='the_nav_bar'> 
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Features</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Pricing</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Dropdown link
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	            <li><a class="dropdown-item" href="#">Action</a></li>
+	            <li><a class="dropdown-item" href="#">Another action</a></li>
+	            <li><a class="dropdown-item" href="#">Something else here</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 	<div class="container">
-		<div class="row">
-      		<div class="col-md-12 jumbotron text-center">
-	        	<h1>BCS API Wrapper</h1>
-	        	<p>Manage Students Progress Better</p>
-	      	</div>
+	  <div class="row align-items-start">
+	    <div class="col-md-8">
+	      <h4>Some Visualization</h4>
+	      <hr/>
+	      <div>
+	      	<img src='image/image_31.png' alt='Some Image Here'>
+	      	<p>Some Text</p>
+	      </div>
 	    </div>
-		<div class="row">
-      		<div class="col-md-6">
-      			<h3>Attendance</h3>
-        		<div id="attendance_chart" style="height: 300px">
-        		</div>
-	      	</div>
-      		<div class="col-md-6">
-	        	<h3>Assignment Submission</h3>
-        		<div id="grades_chart" style="height: 300px">
-        		</div>
-	      	</div>
+	    <div class="col-md-4">
+  	      <h5>Some Other Visualization</h4>
+	      <hr/>
+	      <div>
+	      	<img class='small_thumbs' src='image/image_31.png' alt='Image 1'>
+	      	<img class='small_thumbs' src='image/image_31.png' alt='Image 2'>
+	      	<img class='small_thumbs' src='image/image_31.png' alt='Image 3'>
+	      	<img class='small_thumbs' src='image/image_31.png' alt='Image 4'>
+	      </div>
 	    </div>
-    	<div class="row">
-	      	<div class="col-md-3">
-	        	<div class="well">
-		          	<h5>Select Student:</h5>
-		          	<select id="selDataset" onchange="optionChanged(this.value)"></select>
-	        	</div>
-	        	<div class="panel panel-primary">
-		          	<div class="panel-heading">
-		            	<h3 class="panel-title">Progress Report</h3>
-	          		</div>
-          			<div id="sample-metadata" class="panel-body">
-          			</div>
-    			</div>
-			</div>
-      		<div class="col-md-9">
-      			<h3>Feedback</h3>
-        		<div id="feedback_chart" style="height: 300px">
-        		</div>
-	      	</div>
-	    </div>
-	    <div class="row">
-      		<div class="col-md-12">
-	        	<div id="bubble">
-	        	</div>
-      		</div>
-	    </div>
-  	</div>
-	<script type="text/javascript" src="static/config.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	  </div>
+	</div>
+	<iframe width="100%" height="680" frameborder="0"
+  src="https://observablehq.com/embed/@mbostock/walmarts-growth?cells=chart"></iframe>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
-</html>	
+</html>
